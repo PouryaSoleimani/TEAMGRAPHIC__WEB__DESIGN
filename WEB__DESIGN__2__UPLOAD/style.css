@@ -1,0 +1,50 @@
+.shadow__btn {
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.shadow__btn {
+    background: rgba(0, 0, 0, 0.616);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.616);
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px #FABB14,
+        0 0 10px #FABB14,
+        0 0 20px #FABB14,
+        0 0 40px #FABB14;
+}
+
+.PLANBOX {
+    position: relative;
+}
+
+.PLANBOX:hover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background: linear-gradient(180deg, #fabd14, black, transparent);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    ;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.fancybox-content {
+    transform: translate(178.5px, -2488.05px) scale(1, 1);
+    opacity: 1;
+    width: 1563px;
+    height: 4203px;
+}
